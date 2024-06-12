@@ -26,6 +26,10 @@ namespace CollectionPractica
                 case 3: Console.WriteLine("\n Ejercicio 3");
                     EjercicioIII.Run();
                     break;
+                case 4:
+                    Console.WriteLine("\n Ejercicio 4");
+                    EjercicioIV.Run();
+                    break;
             }
 
 
