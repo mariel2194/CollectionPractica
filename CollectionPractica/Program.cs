@@ -10,7 +10,7 @@ namespace CollectionPractica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Seleccione el # del Ejercicio que quiere ver \n  ");
+            Console.WriteLine("Seleccione el # del Ejercicio (1-5) que quiere ver \n  ");
             int? opcion = int.Parse(Console.ReadLine());
 
             switch (opcion)
@@ -29,6 +29,10 @@ namespace CollectionPractica
                 case 4:
                     Console.WriteLine("\n Ejercicio 4");
                     EjercicioIV.Run();
+                    break;
+                case 5:
+                    Console.WriteLine("\n Ejercicio 5");
+                    EjercicioV.Run();
                     break;
             }
 
