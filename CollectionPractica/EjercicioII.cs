@@ -11,10 +11,10 @@ using static System.Collections.Specialized.BitVector32;
 namespace CollectionPractica
 {
 
-    public class EjercicioII
+    public static class EjercicioII
     {
         static Stack<Fruta> frutasPila = new Stack<Fruta>();
-        static void Main(string[] args)
+        public static void Run()
         {
             Console.WriteLine("A continuacion agregue frutas \n");
             frutasPila = AgregarFruta();

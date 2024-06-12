@@ -5,10 +5,10 @@ using static System.Collections.Specialized.BitVector32;
 
 namespace CollectionPractica
 {
-    public class EjercicioI
+    public static class EjercicioI
     {
         static Queue<Estudiante> seccionI = new Queue<Estudiante>();
-        static void RunEjercicioI(string[] args)
+        public static void Run()
         {
             Console.WriteLine("A continuacion cree una seccion de estudiantes \n");
             seccionI = CrearSeccion();
@@ -26,7 +26,7 @@ namespace CollectionPractica
                     string? matriculaFilter = Console.ReadLine();
                     BuscarPorMatricula(seccionI, matriculaFilter);
                 }
-            }                  
+            }
 
         }
         public static Queue<Estudiante> CrearSeccion()
@@ -52,7 +52,7 @@ namespace CollectionPractica
             int n = 0;
             foreach (var estudiante in seccion)
             {
-                Console.WriteLine( (n+=1) + "." + estudiante.getNombre() + " " + estudiante.getMatricula()+ "\n");
+                Console.WriteLine((n += 1) + "." + estudiante.getNombre() + " " + estudiante.getMatricula() + "\n");
             }
         }
 
@@ -63,8 +63,8 @@ namespace CollectionPractica
                 if (matricula == estudiante.getMatricula())
                 {
                     Console.WriteLine("Esta matricula pertence a:" + estudiante.getNombre() + "\n");
-                }                
-              
+                }
+
             }
 
         }
